@@ -16,6 +16,7 @@ header {
     background-position: center right;
     background-repeat: no-repeat;
     background-color: #903938;
+    z-index: +5;
 }
 
 .top-nav {    position: absolute;
@@ -25,6 +26,7 @@ header {
     top: 0;
     background-position: center right;
     background-repeat: no-repeat;
+    
 }
 
 .left-head {
@@ -269,6 +271,7 @@ line-height: 32px;
    
 
     z-index: -30;
+
     padding: 42px 100px 0px 40px;
     align-items: center;
    
