@@ -1,0 +1,3 @@
+					<button class="btnsearch fas fa-sync" onclick="">Tìm kiếm </button>
+				<button class="btnsearch fas fa-search" onclick="">Tìm kiếm </button>
+				<button class="btnexsearch fas fa-search" onclick="">Tìm kiếm nâng cao</button>
