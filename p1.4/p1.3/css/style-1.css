@@ -58,7 +58,7 @@ header {
 
     vertical-align: middle;
  
-    padding-bottom: 30px;
+   
     width: 260px;
 
 }
@@ -72,10 +72,11 @@ header {
     display: inline-block;
 }
 .left-head .logo-box .bird {
-  
     width: 75px;
     height: 40px;
     padding-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
  
 }
 
