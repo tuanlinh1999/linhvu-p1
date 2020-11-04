@@ -22,7 +22,16 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+@media screen and(max-width: 990px) {
+    footer {
+        height: auto;
+        display: flex;
 
+    }
+    .footertext {
+        display: block
+    }
+}
 .bg {
     position: absolute;
 
@@ -53,7 +62,7 @@ footer {
 
 
 }
-@media screen and(max-width: 1800px) {
+@media screen and(max-width: 2222px) {
     .login-wrapper {
         height: auto;
         display: flex;
@@ -68,17 +77,18 @@ footer {
 }
 .headtext {
     text-transform: uppercase;
-    padding-top: 0px;
+    padding-top: 0;
     font-family: Lora;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
- 
+    line-height: 36px;
 
 
+    text-align: center;
 
 
-    color: #903938;
+    color: #CE7A58;
 }
 
 .link {
@@ -86,10 +96,10 @@ footer {
 }
 .loginbox {
 
-    padding: 10px 20px;
+    padding: 10px;
 
     height: auto;
-    max-width: 460px;
+    width: 460px;
     border: 1px solid lightgray;
     background-color: #FFFFFF;
 
@@ -113,46 +123,61 @@ footer {
     background-position: 6px 7px;
     background-repeat: no-repeat;
 }
-
+.login input .code {
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+    padding: 7px 30px 7px 10px;
+    background-size: 11px;
+    background-color: #fff;
+    background-position: 6px 7px;
+    background-repeat: no-repeat;
+}
 
 .loginform.-codebox .special-input {
     position: relative;
-    padding-right: 160px;
+    padding-right: 180px;
 
 }
 .loginform .special-input .code {
     position: absolute;
-
+    width: auto;
     height: auto;
-    margin-top: -31px;
-    padding-bottom: 0px;
-    width: 150px;
+    /* margin-left: 6px; */
+    margin-top: -10px;
+    top: -2px;
+    width: 170px;
     right: 0;
-    padding-left: 23px;
+    padding-left: 15px;
     background: #F5F5F5;
-    font-size: 23px;
+    font-size: 25px;
+    background-size: 25px;
+    /* text-align: left; */
     box-sizing: border-box;
     border-radius: 4px;
 
+   
+
+
+   
 
 }
-
-button .buttons .far {padding-left: 5px;padding-right: 5px}
-.code a {
-    margin-top: 15px;
-    padding-bottom:15px ;
-}
+.code a {margin-top:15px}
 .reversebtn {
-    margin-top: 2px;
-    margin-left: 10px;
-
-    padding-top: 1px;
- 
+    margin-top: 5px;
+    margin-left: 15px;
+    border-radius: 50%;
+    padding-top: 10px;
+    width: 35px;
+    height: 35px;
     border: none;
+    background-repeat: no-repeat;
+    background-position: 4px 7px,5px;
+    background-repeat: no-repeat;
+    background-size: 24px;
     
-    background-size: 20px;
 }
-
 
 .lb {
     padding-right: 290px;
@@ -207,14 +232,15 @@ label {
     font-weight: 400;
     font-size: 26px;
     line-height: 28px;
+}
+ul {
+
     border-bottom: 1px solid #C3C8D2;
 
 }
-
 .login .tabs > li {
-    padding: 0;
     display: inline-block;
-    max-width: 205px;
+    width: 215px;
     border-bottom: 3px solid transparent;
 
 }
@@ -264,42 +290,3 @@ label {
     text-align: center;
     padding-top: 8px;
 }
-@media(max-width: 1024px) {
-    .hidden-devide-1024 {
-        display: none !important;
-    }
-}
-@media(min-width: 1025px) {
-    .show-devide-1024 {
-        display: none !important;
-    }
-}
-@media(max-width: 768px) {
-    .hidden-devide-768 {
-        display: none !important;
-    }
-}
-@media(min-width: 769px) {
-    .show-devide-768 {
-        display: none !important;
-    }
-}
-
-@media(max-width: 480px) {
-
-    .login-wrapper .headtext {
-        font-size: 16px;
-    }
-    .login-wrapper .logo {
-        width: 70px;
-    }
-    footer {
-     
-        height: auto;
-
-      
-        display: block ;
-       
-    }
-}
-    
