@@ -42,7 +42,8 @@ header {
      .right-head {
         display: none;
     }
-
+    .search-result{overflow-x: auto;}
+    .search-box {float: none;}
 
 }
 @media (max-width: 600px) {
@@ -642,7 +643,7 @@ option {
     margin-bottom: 30px;
   
 }
-.table {overflow: scroll;}
+
 .table th {
     padding: 2px 3px 4px 5px;
     margin: 2px 3px 4px 5px;
