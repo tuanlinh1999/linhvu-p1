@@ -38,14 +38,14 @@ header {
     color: #ffffff;
 }
 
-@media only screen and(max-width: 600px) {
-    .right-head {
+@media (max-width: 500px) {
+     .right-head {
         display: none;
     }
 
 
 }
-@media only screen and(max-width: 600px) {
+@media (max-width: 600px) {
     .sidebar {
         display: none;
     }
@@ -640,7 +640,9 @@ option {
     border-radius: 4px;
     -moz-border-radius: 4px;
     margin-bottom: 30px;
+  
 }
+.table {overflow: scroll;}
 .table th {
     padding: 2px 3px 4px 5px;
     margin: 2px 3px 4px 5px;
