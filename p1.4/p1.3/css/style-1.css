@@ -3,7 +3,7 @@ body {
     background-color: #FBFBFB;
     margin: 0;
 
-    
+
     overflow-x: hidden;
 }
 
@@ -19,22 +19,40 @@ header {
     z-index: +5;
 }
 
-.top-nav {    position: absolute;
+.top-nav {
+    position: absolute;
     height: 45px;
     left: 0;
     right: 0;
     top: 0;
     background-position: center right;
     background-repeat: no-repeat;
-    
+
 }
 
 .left-head {
     position: absolute;
- 
+
     max-width: 700px;
     height: 45px;
     color: #ffffff;
+}
+
+@media only screen and(max-width: 600px) {
+    .right-head {
+        display: none;
+    }
+
+
+}
+@media only screen and(max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+    .left-head {
+        display: block;
+        text-align: center;
+    }
 }
 
 
@@ -57,15 +75,15 @@ header {
     display: inline-block;
 
     vertical-align: middle;
- 
-   
+
+
     width: 260px;
 
 }
 .left-head .logo-box .logo {
     width: 37px;
     padding-right: 11px;
-  
+
 }
 .left-head .logo-box .logo img {
     width: 100%;
@@ -77,31 +95,35 @@ header {
     padding-left: 10px;
     display: inline-block;
     vertical-align: middle;
- 
+
 }
 
 
 .right-head {
-   
 
-    right:0;
-    top:0;
+
+    right: 0;
+    top: 0;
     height: 46px;
     position: absolute;
     background-color: #903938;
     padding-right: 10px;
 }
 
-.right-head .fas { color:#ffffff;
-font-size: 22px;
-line-height: 32px;
+
+.right-head .fas {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 32px;
 
 
 }
 
-.right-head .info, .right-head .n, .right-head .user {
-    display:table-cell;
-    padding: 0px 5px 10px 10px;
+.right-head .info,
+.right-head .n,
+.right-head .user {
+    display: table-cell;
+    padding: 0 5px 10px 10px;
     vertical-align: middle;
     align-items: center;
 
@@ -129,31 +151,31 @@ line-height: 32px;
     background-repeat: no-repeat;
     vertical-align: middle;
     display: inline-block;
-  
+
 }
 
 .right-head .user {
     height: 46px;
-   
+
     margin-right: 5px;
     width: auto;
 
 }
 
 
-.right-head .user  .user-text {
+.right-head .user .user-text {
 
     font-size: 14px;
     position: relative;
     font-weight: 400;
-   display:inline;
+    display: inline;
     vertical-align: middle;
-  align-items: center;
+    align-items: center;
     color: #FFFFFF;
 }
 
 .user .dropdown {
-   
+
     font-size: 14px;
 }
 
@@ -162,7 +184,7 @@ line-height: 32px;
     width: 42px;
     position: fixed;
     top: 45px;
-    display: block;
+
     z-index: +3;
     left: 0;
     background-color: #ffffff;
@@ -173,14 +195,16 @@ line-height: 32px;
     border-right: 2px solid #C3C8D2;
 }
 
-.sidebar:hover {width: 360px;}
+.sidebar:hover {
+    width: 360px;
+}
 
 
 .sidebar ul {
     display: relative;
     list-style-type: none;
-    
-    padding-inline-start: 0px;
+
+    padding-inline-start: 0;
 }
 
 .sidebar a {
@@ -195,13 +219,13 @@ line-height: 32px;
     /* Text/A */
 
     color: #292D34;
-    
-   padding-left: 5px;
 
-  
+    padding-left: 5px;
+
+
     vertical-align: middle;
-   
-    display:inline-block;
+
+    display: inline-block;
     position: relative;
     text-decoration: none;
     border-bottom: 2px solid transparent;
@@ -216,30 +240,34 @@ line-height: 32px;
 
 }
 
-.sidebar .fas,.sidebar .icon-text,.sidebar .down {
+.sidebar .fas,
+.sidebar .icon-text,
+.sidebar .down {
     display: inline-block;
     vertical-align: middle;
 }
 
-.sidebar .icon-text {  padding-left: 15px;}
+.sidebar .icon-text {
+    padding-left: 15px;
+}
 
 .sidebar .menus li a .down {
     position: absolute;
-   
+
     font-size: 16px;
-    right: 0px;
+    right: 0;
 
 
 }
 
 .sidebar .fas {
     font-size: 20px;
- 
+
     color: #82858A;
-   
+
     width: 30px;
 
-   
+
     line-height: 30px;
     text-align: center;
 }
@@ -276,13 +304,12 @@ line-height: 32px;
     height: 42px;
     width: 100%;
     background-color: #F2F2F2;
-   
+
 
     z-index: -30;
 
-    padding-top: 42px ;
+    padding-top: 42px;
     align-items: center;
-   
 
 
 }
@@ -306,7 +333,7 @@ line-height: 32px;
 .link-page a .fas {
     font-size: 14px;
     color: #903938;
-  
+
     padding-right: 5px;
     line-height: 20px;
 }
@@ -333,12 +360,9 @@ body .main-wrapper {
 
     padding: 25px;
     z-index: -3;
-  
-    
 
-   
+
 }
-
 
 
 .search-box {
@@ -347,7 +371,7 @@ body .main-wrapper {
     border-radius: 4px;
     background: #FFFFFF;
 
- 
+
     width: auto;
     height: auto;
 
@@ -360,10 +384,10 @@ body .main-wrapper {
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
-    
-    
+
+
     color: #292D34;
- 
+
 }
 
 .search-bar .search-left {
@@ -421,7 +445,6 @@ body .main-wrapper {
     font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
-    
 
 
 }
@@ -434,12 +457,11 @@ body .main-wrapper {
     font-weight: 600;
     padding-right: 15px;
     padding-left: 15px;
-    margin: 10px;
+    margin: 5px;
     font-weight: 600;
     font-size: 14px;
     line-height: 22px;
     border: 1px solid #C3C8D2;
-    margin: 5px;
 
     align-items: center;
 
@@ -499,25 +521,24 @@ body .main-wrapper {
 
 .search-left .cb {
 
-  
 
     display: inline-block;
-    position: absolute;
+    position: relative;
     height: 23px;
     width: 123px;
     top: 0;
     right: 0;
-    margin: 10px;
+
 
 }
 
 
 .search-left .search-text {
-    
-    padding-right: 10px;
+
+
     position: relative;
-    width: 70%;
- 
+    max-width: 70%;
+
 
 }
 
@@ -556,10 +577,12 @@ option {
 
 }
 
-.buttons {float: right;
-padding-bottom: 15px;}
+.buttons {
+    float: right;
+    padding-bottom: 15px;
+}
 .buttons button {
-    
+
     padding-right: 23px;
     padding-left: 23px;
     margin: 5px;
@@ -567,9 +590,8 @@ padding-bottom: 15px;}
     font-size: 14px;
     line-height: 22px;
     border: 1px solid #C3C8D2;
-    
+
     height: 32px;
-  
 
 
     color: #CE7A58;
@@ -644,6 +666,7 @@ padding-bottom: 15px;}
 }
 
 .table tr {
+    white-space: nowrap;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -750,7 +773,7 @@ button .fas {
     margin-right: 15px;
     width: 93px;
     height: 36px;
-  
+
 
     font-weight: 400;
     font-size: 12px;
@@ -777,7 +800,7 @@ button:active {
     background-color: #dfccc5;
 }
 .search-page {
-    
 
-position: relative;
+
+    position: relative;
 }
