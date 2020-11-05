@@ -39,7 +39,7 @@ header {
 }
 
 @media(max-width: 500px) {
-    body {width: 400px;}
+    
     .right-head {
         display: none;
     }
