@@ -39,7 +39,15 @@ header {
 }
 
 @media(max-width: 500px) {
+    body .main-wrapper {
+        display: block;
     
+    
+     
+        z-index: -3;
+    
+    
+    }
     .right-head {
         display: none;
     }
@@ -48,10 +56,12 @@ header {
     }
     .logo-box {
         align-items: center;
+        margin-top: 8px;
     }
     .logo-box .bird {
         display: none !important;
     }
+    .link-page {display: none !important;}
    
     .sidebar {
         display: none;
@@ -83,9 +93,9 @@ header {
     }
 }
 
-
+.left-head .logo { display: none !important;}
 .left-head .fas {
-
+   
     font-size: 33px;
     padding: 7px;
 }
