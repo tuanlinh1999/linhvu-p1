@@ -85,6 +85,7 @@ header {
     .search-left .cb {
         padding-top: 10px;
         display: block !important;
+        padding-left: 0px !important;
     }
 
 
@@ -144,6 +145,7 @@ header {
         font-weight: bold;
         text-transform: uppercase;
         width: auto;
+        font-family: "Roboto";
     }
 
     .search-box p {
