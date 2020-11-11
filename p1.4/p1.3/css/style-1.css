@@ -53,12 +53,19 @@ header {
 
     }
     .search-bar {
-        display: block;
+        display: table;
         width: auto;
         height: auto;
 
-        padding-right: 10px;
+        
     }
+
+    .search-bar > .row-1 {display: table-row}
+    .search-bar > .row-1 > .sp {display: table-cell}
+    .search-bar > .row-1 > input {display: table-cell}
+    .search-bar > .row-2 {display: table-row}
+    .search-bar >.row-2 >  .ddlist1{display: table-cell}
+    .search-bar >.row-2 > .ddlist2{display: table-cell}
 
     .search-left {
         padding-left: 5px;
@@ -135,7 +142,8 @@ header {
         display: flex;
         overflow: auto;
     }
-    .header-text {
+   .left-head .header-text {
+        font-family: "Roboto";
         text-align: center;
         font-size: 16px;
         font-weight: bold;
@@ -186,8 +194,10 @@ header {
 .left-head .logo-box .logo,
 .left-head .logo-box .header-text {
     display: inline-block;
-
+    font-family: "Roboto";
     vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: 500;
 
 
 }
@@ -495,61 +505,12 @@ body .main-wrapper {
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
+    
 
 
     color: #292D34;
 
-}
 
-.search-bar .search-left {
-
-    position: relative;
-    font-size: 16px;
-    display: block;
-    float: left;
-    box-sizing: border-box;
-    width: 47%;
-    width: -webkit-calc(50% - 5px);
-    width: calc(50% - 5px);
-    margin: 0 5px 10px 0;
-}
-
-.search-bar .search-right {
-
-    font-size: 16px;
-    display: block;
-    float: right;
-    box-sizing: border-box;
-    width: 47%;
-    width: -webkit-calc(50% - 5px);
-    margin: 0 0 10px 5px;
-}
-
-.search-bar .search-text {
-    border: 1px solid lightgrey;
-    border-radius: 4px;
-    width: 100%;
-    height: 36px;
-    padding-left: 10px;
-
-
-}
-
-.search-right .search-text {
-    border: 1px solid lightgrey;
-    border-radius: 4px;
-    width: 98%;
-    height: 36px;
-    padding-left: 10px;
-
-
-}
-::placeholder {
-    font-weight: normal;
-    font-size: 14px;
-
-    width: 100%;
-    color: #292D34;
 }
 .search-buttons {
     text-align: center;
@@ -618,40 +579,6 @@ body .main-wrapper {
     border: 1px solid #d1a28f;
 }
 
-.search-left label {
-    font-size: 14px;
-    line-height: 22px;
-
-
-    align-items: center;
-
-
-    color: #292D34;
-}
-
-
-.search-left .cb {
-
-
-    display: inline-block;
-    position: relative;
-    height: 23px;
-    width: 123px;
-    top: 0;
-    right: 0;
-
-
-}
-
-
-.search-left .search-text {
-
-
-    position: relative;
-    width: 70%;
-
-
-}
 
 
 select {
@@ -689,7 +616,12 @@ option {
     padding: 20px;
 
 }
-
+.table {
+   
+    display: block;
+    overflow: auto;
+    padding-bottom: 5px;
+}
 .buttons {
     float: right;
     padding-bottom: 15px;
@@ -745,19 +677,19 @@ option {
     border: 1px solid #d1a28f;
 }
 .search-page table {
-    margin-top: 30px;
+    
     border: 1px solid #C3C8D2;
     box-sizing: border-box;
     border-collapse: collapse;
     width: 100%;
     border-radius: 4px;
     -moz-border-radius: 4px;
-    margin-bottom: 30px;
-
+  
+   
 
 }
 
-.table th {
+table th {
     padding: 2px 3px 4px 5px;
     margin: 2px 3px 4px 5px;
     background: #F8E6DE;
@@ -777,11 +709,11 @@ option {
     border: 1px solid #C3C8D2;
     box-sizing: border-box;
 }
-.table tr:nth-child(odd) {
+table tr:nth-child(odd) {
     background-color: #f2f2f2;
 }
 
-.table tr {
+table tr {
     white-space: nowrap;
     font-family: Open Sans;
     font-style: normal;
@@ -799,17 +731,17 @@ option {
     color: #292D34;
 }
 
-.table tr .status-3 {
+table tr .status-3 {
     color: #219653;
 }
-.table tr .status-2 {
+table tr .status-2 {
     color: #FF8C00;
 }
-.table tr .status-1 {
+table tr .status-1 {
     color: #ED5050;
 }
 
-.table tr .far {
+table tr .far {
     color: #82858A;
     font-size: 18px;
     line-height: 30px;
@@ -820,7 +752,7 @@ button .fas {
 
     padding-right: 5px
 }
-.table tr a {
+table tr a {
     font-size: 14px;
     line-height: 22px;
     /* or 157% */
@@ -835,6 +767,7 @@ button .fas {
 
 
 .page-control {
+    padding-top: 15px;
     float: right;
 }
 
