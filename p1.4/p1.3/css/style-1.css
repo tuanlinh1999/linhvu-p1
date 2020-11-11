@@ -56,35 +56,35 @@ header {
         display: block;
         width: auto;
         height: auto;
-       
+
         padding-right: 10px;
     }
 
     .search-left {
         padding-left: 5px;
-        clear:  both ;
+        clear: both;
         float: none !important;
         width: auto !important;
-       
-     
+
+
         display: block !important;
     }
     .search-left .search-text {
         padding-left: 5px;
-      
-        width:248px !important;
+
+        width: 95% !important;
         display: block !important;
         align-items: center;
-        margin-right: 20px;
+        margin-right: -20px;
     }
     .search-left .cb {
         padding-top: 10px
     }
-  
+
 
     .search-right {
         padding-top: 10px;
-        clear:  both ;
+        clear: both;
         float: none !important;
         width: auto !important;
     }
@@ -126,9 +126,14 @@ header {
         display: none;
     }
 
-
+    .buttons {
+        display: block !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
     table {
-        display: none;
+        display: flex;
+        overflow: auto;
     }
     .header-text {
         text-align: center;
@@ -144,6 +149,20 @@ header {
     .table-options p {
         text-align: center !important;
     }
+
+    .page-control {
+        display: block !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    .page-control input,
+    .page-control a {
+        display: none !important;
+   
+    }
+    .page-control button {     clear: both !important;
+        align-items: center !important;
+        text-align: center !important;}
 
 }
 
@@ -643,7 +662,7 @@ select {
     height: 36px;
     padding-left: 10px;
     display: block;
-    
+
 }
 
 
